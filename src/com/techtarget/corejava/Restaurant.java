@@ -9,6 +9,14 @@ public class Restaurant {
     private String name;
     private Menu[] menu;
 
+    public static String roof;
+
+    public static String registration(){
+        return "registered....";
+    }
+
+    public static final String a = "Avinash";
+
     public Restaurant(String a, String p, String n, Menu[] menu) {
         this.address = a;
         this.phone = p;
@@ -61,6 +69,9 @@ public class Restaurant {
     public static void main(String[] args) {
         Menu m1 = new Menu(1,"Chicken 65", "Very yummy");
         Menu[] mArray = {m1};
+
+        System.out.println(Restaurant.registration());
+
 
 
         Restaurant anis = new Restaurant("123 Main St", "12345678", "Anis", mArray);
