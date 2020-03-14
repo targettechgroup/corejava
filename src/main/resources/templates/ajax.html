@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Target Tech</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="min-height: 500px">
+
+    <div class="starter-template">
+        <div class="text-center">
+            <h1>Calculator</h1>
+        </div>
+
+        <form class="form-horizontal" id="search-form">
+
+            <div class="custom-control custom-text">
+                <label class="custom-control-label" for="number1">Number 1:</label>
+                <input type="text" class="custom-control-input" id="number1"/>
+            </div>
+            <br>
+
+            <div class="custom-control custom-text">
+                <label class="custom-control-label" for="number2">Number 2 :</label>
+                <input type="text" class="custom-control-input" id="number2"/>
+
+            </div>
+            <br>
+            <label for="operations">Operations:</label>
+            <select id="operations">
+                <option value="add">Add</option>
+                <option value="Subtract">Subtract</option>
+                <option value="Multiply">Multiply</option>
+                <option value="Divide">Divide</option>
+            </select>
+            <br>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+
+                    <button type="submit" id="btn-calculate"
+                            class="btn btn-primary btn-lg">Calculate
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="feedback" class="text-center">
+    </div>
+
+</div>
+
+<div class="container">
+    <footer>
+    </footer>
+</div>
+
+<script type="text/javascript"  src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript"  src="js/main.js"></script>
+</body>
+</html>
