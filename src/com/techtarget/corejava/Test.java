@@ -22,45 +22,58 @@ public class Test {
 //        System.out.println(im.shave(1.50, "Gillete"));
         try {
 
-            // List
+//            // List
+//
+//            List<String> namesList = new ArrayList<String>();
+//            namesList.add("A");
+//            namesList.add("A");
+//            namesList.add("A");
+//            namesList.add("A");
+//            namesList.add("B");
+//            namesList.add("C");
+//            namesList.add("D");
+//            //namesList.add(1);
+//            System.out.println("Output from list" + namesList.toString());
+//
+//            Set<String> namesSet = new HashSet<String>();
+//            namesSet.add("A");
+//            namesSet.add("A");
+//            namesSet.add("A");
+//            namesSet.add("A");
+//            namesSet.add("B");
+//            namesSet.add("C");
+//            namesSet.addAll(namesList);
+//            System.out.println("Output from set" +namesSet.toString());
+//
+//            //String[] names = new String[3];
+//            Map names = new HashMap();
+//            names.put("Shilpa", "Ratnakar");
+//            names.put("Sudha", "Selvam");
+//            names.put("Maithlee", "Mandle");
+//            names.put("Sravya", "Kancharla");
+//            names.put("Mrudula", "Vusirikala");
+//
+//            System.out.println(names);
+//            System.out.println(names.get("Maithlee"));
+//
+//            Iterator nameIterator = names.keySet().iterator();
+//
+//            while (nameIterator.hasNext()) {
+//                System.out.println("Last Name: " + names.get(nameIterator.next()));
+//            }
+//
+//            Chef chef = new Chef();
+//            Pasta pasta = new Pasta();
+//            Pizza pizza = new Pizza();
+//
+//            chef.cook(pasta);
+//            chef.cook(pizza);
 
-            List<String> namesList = new ArrayList<String>();
-            namesList.add("A");
-            namesList.add("A");
-            namesList.add("A");
-            namesList.add("A");
-            namesList.add("B");
-            namesList.add("C");
-            namesList.add("D");
-            //namesList.add(1);
-            System.out.println("Output from list" + namesList.toString());
+            DBConnection dbConnection1 = DBConnection.getDBConnection();
+            DBConnection dbConnection2 = DBConnection.getDBConnection();
+            System.out.println("DBConnection - 1 " + dbConnection1);
+            System.out.println("DBConnection - 2 " + dbConnection2);
 
-            Set<String> namesSet = new HashSet<String>();
-            namesSet.add("A");
-            namesSet.add("A");
-            namesSet.add("A");
-            namesSet.add("A");
-            namesSet.add("B");
-            namesSet.add("C");
-            namesSet.addAll(namesList);
-            System.out.println("Output from set" +namesSet.toString());
-
-            //String[] names = new String[3];
-            Map names = new HashMap();
-            names.put("Shilpa", "Ratnakar");
-            names.put("Sudha", "Selvam");
-            names.put("Maithlee", "Mandle");
-            names.put("Sravya", "Kancharla");
-            names.put("Mrudula", "Vusirikala");
-
-            System.out.println(names);
-            System.out.println(names.get("Maithlee"));
-
-            Iterator nameIterator = names.keySet().iterator();
-
-            while (nameIterator.hasNext()) {
-                System.out.println("Last Name: " + names.get(nameIterator.next()));
-            }
         } catch (Exception e) {
             System.out.println("Something went wrong: Details " + e.getMessage());
         }
